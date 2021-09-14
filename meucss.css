@@ -1,0 +1,145 @@
+* {
+
+margin:0;
+padding:0;
+box-sizing: border-box;/*para ter referencia a borda da caixa como referencia*/
+font-family: "Poppins", sans-serif;/*caso não pegue poppins a sans-serif funcionará*/
+}
+
+body
+{
+    background:#f6f9ff;
+    height: 100vh; /*altura padrão viewPort*/
+    width: 100% ;/*largura total mais utilizada*/
+
+    display:flex;/*centraliza*/
+    justify-content: center;/*centraliza requer display:flex*/
+    align-items: center;/**/
+    }
+
+    main.cards {
+
+display:flex;
+
+
+    }
+     main section .icon {  
+/*preenche 64 .Tamanho da imagem é 100% então vai preencher toda os 64px
+isso é feito sempre quando se quer que as imagens fique do mesmo tamanho para todos*/
+width:64px;
+height: 64px;
+
+    }
+    main section img{
+        width:100%;
+    }
+
+    main section.card{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+background:white;
+padding: 1rem 1.5rem;
+max-height: 256px;/*altura máxima que pode chegar o card*/
+margin-left: 32px;
+
+    }
+    main section.card:first-child{
+        margin-left: 0px;
+
+
+    }
+
+    main.cards section.card button{
+padding: 0.5rem 1rem;
+text-transform: uppercase;
+border-radius: 32px;
+border: 0;
+cursor: pointer;
+font-size: 80%;
+color: white;
+
+display: flex;
+flex-direction:column;
+align-items: center;
+margin-top: 20px;
+
+
+    }
+  
+
+    main.cards section.card.play button:hover{
+
+        background: #FF5F8F;
+
+        
+                
+                
+    }
+    main.cards section.card.shop button:hover{
+        background: #3e8aff;
+    }
+    main.cards section.card.contact button:hover{
+        background: #9f66ff;
+    }
+    main section.contact button{
+background: linear-gradient(to right,#9f66ff,#DFCBFF);
+
+    }
+
+    main section.shop button{
+        background: linear-gradient(to right,#3e8aff,#bbdeff);
+        
+            }
+
+            main section.card.play button{
+                background: linear-gradient(to right,#FF5F8F,#DFCBFF);
+                  }
+
+                    main section.contact {
+                        box-shadow: 20px 20px 50px -30px #DBC4FF;
+                            }
+
+                            main section.shop {
+                                box-shadow: 20px 20px 50px -30px #AFD6FF;
+                                    }
+                                    main section.play {
+                                        box-shadow: 20px 20px 50px -30px #FFD1D5;
+                                            }
+                                          main section h3{
+
+                                              margin-top:10px;
+                                              padding-bottom: 10px;
+                                          }
+                                          main section span{
+font-weight: 300;
+max-width:240px;
+font-size: 80%;
+margin-bottom: 16px;
+
+            }
+          
+            @media screen and (max-width:720px) {
+
+                /*sempre quando a tela atingir 720px vai fazer o que está dentro do bloco*/
+                main.cards{
+flex-direction: column;
+
+
+                }
+                main.cards section.card{
+margin-left: 0px;
+margin-bottom: 32px;
+
+                }
+
+                       main.cards section.card:last-child{
+
+margin-bottom: 0px;
+
+                }   
+            }
+                 
+          
